@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ldaprelayscan"
+version = "1.0"
+requires-python = ">=3.9"
+dependencies = [
+    "dnspython",
+    "ldap3",
+    "msldap",
+]
+
+[project.scripts]
+ldaprelayscan = "ldaprelayscan:main"
